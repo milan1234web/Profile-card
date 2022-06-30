@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: tahoma;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282a2c;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    /* width: 30%; */
+}
+
+.img-box img{
+    border-radius: 20px;
+    box-shadow: 0 0 15px 3px rgb(18, 18, 18);
+}
+
+
+
+.belt{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    content: "";
+    height: 20%;
+    bottom: 20%;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0 0 20px 20px;
+    transition: 1s linear;
+}
+
+.font{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+.social-media{
+    position: relative;
+    /* bottom: 14%; */
+    display: none;
+    height: fit-content;
+    
+}
+
+.centerdiv{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+}
+
+a{
+    height: 7vh;
+    width: 7vh;
+    background-color: white ;
+    line-height: 8vh;
+    border-radius: 10px ;
+    text-align: center;
+    margin: 10px;
+}
+
+a i{
+    height: auto;
+}
+
+.fab{
+    font-size: 4vh;
+}
+.fa-facebook-f, .fa-github, .fa-instagram, .fa-linkedin-in{
+    color: black;
+}
+
+/* .fa-facebook-f{
+    color: #4267B2 ;
+}
+.fa-instagram{
+    color: #bc2a8d	;
+}
+.fa-linkedin-in{
+    color: #0072b1 ;
+}
+.fa-github{
+    color: #171515 ;
+} */
+
+a:hover{
+    transition: all 1s;
+    transform: rotatey(360deg);
+}
+
+
+.img-box :hover{
+    cursor: pointer;
+}
+
+.img-box:hover .belt{
+    transition: 1s linear;
+    bottom: 35%;
+    border-radius: 0;
+}
+
+.img-box:hover .social-media{
+    transition: all 2sec;
+    bottom: 14%;
+    display: block;
+}
+
+a:hover{
+    background-color: black;
+}
+
+a:hover .fa-facebook-f{
+    color: white;
+}
+a:hover .fa-github{
+    color: white;
+}
+a:hover .fa-instagram{
+    color: white;
+}
+a:hover .fa-linkedin-in{
+    color: white;
+}
+
